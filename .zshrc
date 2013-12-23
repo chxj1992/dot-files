@@ -21,8 +21,6 @@ plugins=(git npm screen tmux z)
 
 source $ZSH/oh-my-zsh.sh
 
-source $ZSH/plugins/z/z.sh
-
 # User configuration
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
