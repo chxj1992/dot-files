@@ -12,6 +12,7 @@ git clone https://github.com/vim-scripts/northland.vim.git ~/.vim/
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle 
 
 * 安装 vim 插件
+
 :BundleInstall
 
 # Tmux ?
@@ -29,6 +30,7 @@ cp -f .bashrc .bash_aliases ~/
 sudo apt-get install zsh
 
 * 安装 oh-my-zsh
+
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 
 chsh -s `which zsh`
