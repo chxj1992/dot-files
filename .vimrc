@@ -46,6 +46,11 @@ map <S-l> :tabn<CR>
 map <S-x> :sp<CR>
 map <S-y> :vs<CR>
 
+" 命令映射
+cabbrev W w
+cabbrev Q q
+cabbrev WQ wq
+
 "----------------------------------------
 
 
@@ -55,6 +60,7 @@ map <S-y> :vs<CR>
 " NerdTree: 目录树
 "更适合代码的目录树样式
 let g:netrw_liststyle= 3 
+cabbrev E e
 
 " Tagbar: a PHP outline addon
 nmap <F8> :TagbarToggle<CR>
