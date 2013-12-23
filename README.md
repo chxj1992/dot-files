@@ -5,7 +5,7 @@ myConfig
 
 sudo apt-get install vim
 
-cp -f .vimrc ~/
+cp -fr .vimrc .fonts ~/
 
 git clone https://github.com/vim-scripts/northland.vim.git ~/.vim/
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle 
@@ -34,6 +34,5 @@ chsh -s `which zsh`
 
 cp -f .zshrc .zsh_aliases ~/
 
-* 重启生效
-sudo shutdown -r 0
+* 重新登录后生效
 
