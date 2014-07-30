@@ -125,9 +125,9 @@ Plugin 'bling/vim-airline'
 "符号匹配操作,ds:删除，ysiw:插入，cs:修改 ,t=>tag
 Plugin 'tpope/vim-surround'
 "iterm下vim光标样式修复
-Plugin 'sjl/vitality'
+Plugin 'sjl/vitality.vim'
 "html5支持
-Plugin 'othree/html5'
+Plugin 'othree/html5.vim'
 "Dash文档
 Plugin 'rizzatti/dash.vim'
 "Vim剪切板 shift ” + Y
