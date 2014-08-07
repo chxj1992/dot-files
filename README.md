@@ -1,31 +1,30 @@
 myConfig
 ========
 
-# Vim ?
+# Vim 
 
 sudo apt-get install vim
 
 cp -fr .vimrc .fonts ~/
+cp northland.vim ~/.vim/colors/
 
-git clone https://github.com/vim-scripts/northland.vim.git ~/.vim/
-
-git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle 
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle 
 
 * 安装 vim 插件
 
 :BundleInstall
 
-# Tmux ?
+# Tmux 
 
 sudo apt-get install tmux
 
 cp -f .tmux.conf ~/
 
-# Bash ?
+# Bash 
 
 cp -f .bashrc .bash_aliases ~/
 
-# ZSH ?
+# ZSH 
 
 sudo apt-get install zsh
 
@@ -38,4 +37,8 @@ chsh -s `which zsh`
 cp -f .zshrc .zsh_aliases ~/
 
 * 重新登录后生效
+
+# Idea
+
+File > Import Settings -- settings.jar
 
