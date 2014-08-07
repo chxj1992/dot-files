@@ -32,6 +32,9 @@ export LANG=zh_CN.UTF-8
 
 source ~/.zsh_aliases
 
+#bug
+unalias mysql
+
 #export PGDATA=/usr/local/var/postgres
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 

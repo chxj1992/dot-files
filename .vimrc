@@ -83,6 +83,8 @@ let g:EasyMotion_leader_key = '<Leader>'
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
+"Dash
+nmap <silent> <leader>d <Plug>DashSearch
 
 "Bundle 配置
 "================================================== 
@@ -108,7 +110,7 @@ Plugin 'vim-php/tagbar-phpctags.vim'
 Plugin 'gmarik/snipmate.vim'
 "目录树
 Plugin 'The-NERD-tree'
-"牛逼的字符搜索工具
+"牛逼的光标移动方式
 Plugin 'EasyMotion'
 "VIM % 符号匹配增强
 Plugin 'tmhedberg/matchit'
