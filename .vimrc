@@ -128,12 +128,15 @@ Plugin 'bling/vim-airline'
 Plugin 'tpope/vim-surround'
 "iterm下vim光标样式修复
 Plugin 'sjl/vitality.vim'
-"html5支持
-Plugin 'othree/html5.vim'
 "Dash文档
 Plugin 'rizzatti/dash.vim'
 "Vim剪切板 shift ” + Y
 Plugin 'vim-scripts/fakeclip'
+"html5支持
+Plugin 'othree/html5.vim'
+"gradle支持
+Plugin 'tfnico/vim-gradle'
+
 
 "============================================
 
