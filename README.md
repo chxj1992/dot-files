@@ -6,6 +6,7 @@ myConfig
 sudo apt-get install vim
 
 cp -fr .vimrc .fonts ~/
+
 cp northland.vim ~/.vim/colors/
 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle 
