@@ -1,10 +1,10 @@
 "基本配置
 "================================================== 
 
-"深色背景
 set background=dark
-"配色
-colorscheme northland
+colorscheme solarized
+let g:solarized_termcolors=256
+
 "不产生备份文件
 set nowrap
 "行号
@@ -37,6 +37,8 @@ set smarttab
 set smartcase
 "提示栏模式
 set laststatus=2
+"disable Background Color Erase(解决TMUX背景色问题)
+set t_ut= 
 
 "vim tab切换快捷键
 map <C-t> :tabnew<CR>
@@ -66,12 +68,6 @@ let g:Tlist_Ctags_Cmd='/usr/local/bin/ctags'
 let g:tagbar_left = 1
 let g:tagbar_width = 30
 
-"PhpQA: 语法检测
-"code sniffer is too strong ...
-"let g:phpqa_codesniffer_args = '--standard=PHPCS'
-let g:phpqa_codesniffer_autorun = 0
-let g:phpqa_messdetector_autorun = 0
-
 "Emmet: html补全
 let g:user_emmet_expandabbr_key = '<C-e>'
 let g:use_emmet_complete_tag = 1
@@ -84,7 +80,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 "Dash
-nmap <silent> <leader>d <Plug>DashSearch
+"nmap <silent> <leader>d <Plug>DashSearch
 
 "Bundle 配置
 "================================================== 
@@ -95,17 +91,15 @@ nmap <silent> <leader>d <Plug>DashSearch
 set nocompatible
 filetype off
  
-set rtp+=~/.vim/bundle/vundle/
+set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#rc()
 
 "let Vundle manage Vundle  required! 
-Plugin 'gmarik/vundle'
+Plugin 'gmarik/Vundle.vim'
 
 "My Plugins here:
 Plugin 'ctags.vim'
 Plugin 'majutsushi/tagbar'
-"An addon plugin for tagbar using phpctags to generate php ctags index.
-Plugin 'vim-php/tagbar-phpctags.vim'
 "代码补全
 Plugin 'gmarik/snipmate.vim'
 "目录树
@@ -114,8 +108,6 @@ Plugin 'The-NERD-tree'
 Plugin 'EasyMotion'
 "VIM % 符号匹配增强
 Plugin 'tmhedberg/matchit'
-"PHP语法及风格检查
-Plugin 'joonty/vim-phpqa'
 "标签补全
 Plugin 'mattn/emmet-vim'
 "符号配对
@@ -126,17 +118,15 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'bling/vim-airline'
 "符号匹配操作,ds:删除，ysiw:插入，cs:修改 ,t=>tag
 Plugin 'tpope/vim-surround'
-"iterm下vim光标样式修复
-Plugin 'sjl/vitality.vim'
-"Dash文档
-Plugin 'rizzatti/dash.vim'
-"Vim剪切板 shift ” + Y
-Plugin 'vim-scripts/fakeclip'
 "html5支持
 Plugin 'othree/html5.vim'
-"gradle支持
-Plugin 'tfnico/vim-gradle'
 
+"iterm下vim光标样式修复
+"Plugin 'sjl/vitality.vim'
+"Dash文档
+"Plugin 'rizzatti/dash.vim'
+"Vim剪切板 shift ” + Y
+"Plugin 'vim-scripts/fakeclip'
 
 "============================================
 
