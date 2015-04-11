@@ -29,7 +29,7 @@ sudo apt-get install zsh
 
 * 安装 oh-my-zsh
 
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 
 chsh -s `which zsh`
 
