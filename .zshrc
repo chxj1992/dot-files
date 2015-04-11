@@ -32,13 +32,14 @@ export LANG=zh_CN.UTF-8
 
 source ~/.zsh_aliases
 
-#bug
-unalias mysql
+#composer
+export COMPOSER_HOME=/etc/composer/
 
-#export PGDATA=/usr/local/var/postgres
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
+export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_75
+export JRE_HOME=${JAVA_HOME}/jre  
+export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
+export PATH=${JAVA_HOME}/bin:$PATH  
 
-#Mybatis Migrations
-export MIGRATIONS_HOME=/usr/local/share/mybatis-migrations
-export MIGRATIONS=$MIGRATIONS_HOME/bin
-export PATH=$MIGRATIONS:$PATH
+tmux
+
+

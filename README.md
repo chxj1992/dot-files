@@ -5,15 +5,13 @@ myConfig
 
 sudo apt-get install vim
 
-cp -fr .vimrc .fonts ~/
-
-cp northland.vim ~/.vim/colors/
+cp .vimrc ~/
 
 git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle 
 
 * 安装 vim 插件
 
-:BundleInstall
+:PluginInstall
 
 # Tmux 
 

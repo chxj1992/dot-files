@@ -121,6 +121,8 @@ Plugin 'tpope/vim-surround'
 "html5支持
 Plugin 'othree/html5.vim'
 
+Plugin 'altercation/vim-colors-solarized'
+
 "iterm下vim光标样式修复
 "Plugin 'sjl/vitality.vim'
 "Dash文档
