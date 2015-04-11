@@ -7,7 +7,7 @@ sudo apt-get install vim
 
 cp .vimrc ~/
 
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle 
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 * 安装 vim 插件
 
@@ -40,4 +40,3 @@ cp -f .zshrc .zsh_aliases ~/
 # Idea
 
 File > Import Settings -- settings.jar
-
