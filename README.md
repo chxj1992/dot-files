@@ -1,6 +1,8 @@
 myConfig
 ========
 
+![image](https://github.com/chenxiaojing123/myConfig/blob/master/terminal.png)
+
 # Vim 
 
 sudo apt-get install vim
