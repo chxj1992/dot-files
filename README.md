@@ -7,7 +7,7 @@ sudo apt-get install vim
 
 cp .vimrc ~/
 
-git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/vundle 
+git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 * Install Vim Plugins
 
@@ -29,7 +29,7 @@ sudo apt-get install zsh
 
 * Install oh-my-zsh
 
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O - | sh
 
 chsh -s `which zsh`
 
@@ -40,4 +40,3 @@ source ~/.zshrc
 # Idea
 
 File > Import Settings -- settings.jar
-
