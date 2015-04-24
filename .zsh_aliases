@@ -13,3 +13,5 @@ alias LS='ls'
 alias sl='ls'
 alias CD='cd'
 
+# Plugins
+alias fuck='eval $(thefuck $(fc -ln -1))'
