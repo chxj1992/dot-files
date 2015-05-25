@@ -24,13 +24,14 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/sbin:/usr/local/bin:$PATH
 
 export TERM=xterm-256color
 
 export LANG=zh_CN.UTF-8
 
 source ~/.zsh_aliases
+source ~/.zsh_docker
 
 #composer
 export COMPOSER_HOME=/etc/composer/
@@ -39,6 +40,7 @@ export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_75
 export JRE_HOME=${JAVA_HOME}/jre  
 export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
 export PATH=${JAVA_HOME}/bin:$PATH  
+export PATH=$JAVA_HOME/jre:$PATH
 
 tmux
 
