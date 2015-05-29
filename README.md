@@ -4,13 +4,15 @@ myConfig
 ![image](https://github.com/chenxiaojing123/myConfig/blob/master/terminal.png)
 
 # Vim 
-
-    $ sudo apt-get install vim
-    $ cp .vimrc ~/
-    $ kgit clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+    
++ Install Vim
+    
+        $ sudo apt-get install vim
+        $ cp .vimrc ~/
 
 + Install Vim Plugins
-        
+
+        $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
         $ vim
         :PluginInstall
 
@@ -23,9 +25,11 @@ myConfig
 
     $ cp -f .bash* ~/
 
-# ZSH (Recommended)
+# Zsh (Recommended)
 
-    sudo apt-get install zsh
++ Install Zsh
+    
+        $ sudo apt-get install zsh
 
 + Install oh-my-zsh
 
