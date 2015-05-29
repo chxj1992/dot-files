@@ -3,6 +3,7 @@ myConfig
 
 ![image](https://github.com/chenxiaojing123/myConfig/blob/master/terminal.png)
 
+
 # Vim 
     
 + Install Vim
@@ -16,14 +17,12 @@ myConfig
         $ vim
         :PluginInstall
 
+
 # Tmux 
 
     $ sudo apt-get install tmux
     $ cp -f .tmux.conf ~/
-
-# Bash (NOT Recommended)
-
-    $ cp -f .bash* ~/
+    
 
 # Zsh (Recommended)
 
@@ -37,6 +36,12 @@ myConfig
         $ chsh -s `which zsh`
         $ cp -f .zsh*  ~/
         $ source ~/.zshrc
+
+
+# Bash (NOT Recommended)
+
+    $ cp -f .bash* ~/
+
 
 # Idea
 
