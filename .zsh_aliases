@@ -13,7 +13,8 @@ alias LS='ls'
 alias sl='ls'
 alias CD='cd'
 
-alias vi=vim
+alias vi='vim'
+alias sudo='sudo '
 
 # Plugins
 alias fuck='eval $(thefuck $(fc -ln -1))'
