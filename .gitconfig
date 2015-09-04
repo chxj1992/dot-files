@@ -9,6 +9,8 @@
 	ci = commit
 	st = status
 	br = branch
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	last = log -1
 [color]
 	ui = true
 [merge]
