@@ -1,0 +1,15 @@
+[user]
+	email = chxj1992@gmail.com
+	name = chxj1992
+[push]
+	default = simple
+
+[alias]
+	co = checkout
+	ci = commit
+	st = status
+	br = branch
+[color]
+	ui = true
+[merge]
+	tool = vimdiff
