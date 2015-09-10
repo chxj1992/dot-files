@@ -6,6 +6,15 @@ YELOW_COLOR='\E[1;33m'
 RES='\E[0m'
 
 case "$1" in
+    grep)
+        if [ $2 ]
+        then
+            ps aux | grep $2 | grep -v grep 
+        else
+            echo -e "${RED_COLOR}process name needed ${RES}"
+            echo "format: grep 'process name parts'. eg. grep php"
+        fi
+    ;;
     kill)
         if [ $2 ]
         then
@@ -36,7 +45,7 @@ case "$1" in
     ;;
 
     *)
-        echo -e "${GREEN_COLOR}Available options: kill |mem-all |mem-avg ${RES}"
+        echo -e "${GREEN_COLOR}Available options: grep |kill |mem-all |mem-avg ${RES}"
     ;;
 
 esac
