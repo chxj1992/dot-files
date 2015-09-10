@@ -1,0 +1,42 @@
+#!/bin/bash
+
+RED_COLOR='\E[1;31m'  
+GREEN_COLOR='\E[1;32m'
+YELOW_COLOR='\E[1;33m' 
+RES='\E[0m'
+
+case "$1" in
+    kill)
+        if [ $2 ]
+        then
+            ps aux | grep $2 | grep -v grep | awk '{print $2}' | xargs kill -9
+        else
+            echo -e "${RED_COLOR}process name needed ${RES}"
+            echo "format: kill 'process name parts'. eg. kill php"
+        fi
+    ;;
+
+    mem-all)
+        if [ $2 ]
+        then
+            ps aux | grep $2 | awk '{print $6/1024}' | awk '{sum += $1}; END {print sum " MB"}' 
+        else
+            ps aux |  awk '{print $6/1024}' | awk '{sum += $1}; END {print sum " MB"}'
+        fi
+    ;;
+
+    mem-avg)
+        if [ $2 ]
+        then
+            ps aux | grep $2 | awk '{print $6/1024;}' | awk '{avg += ($1 - avg) / NR;} END {print avg " MB";}'
+        else
+            echo -e "${RED_COLOR}process name needed ${RES}"
+            echo "format: mem-avg 'process name parts'. eg. mem-avg php"
+        fi
+    ;;
+
+    *)
+        echo -e "${GREEN_COLOR}Available options: kill |mem-all |mem-avg ${RES}"
+    ;;
+
+esac
