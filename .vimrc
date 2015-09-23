@@ -39,14 +39,16 @@ set smartcase
 set laststatus=2
 "disable Background Color Erase(解决TMUX背景色问题)
 set t_ut= 
+"删除键失灵
+set backspace=2
 
 "vim tab切换快捷键
 map <C-t> :tabnew<CR>
 map <S-h> :tabp<CR>
 map <S-l> :tabn<CR>
 "vim 分屏快捷键
-map <S-x> :sp<CR>
-map <S-y> :vs<CR>
+map <C-_> :sp<CR>
+map <C-\> :vs<CR>
 
 "命令映射
 cabbrev W w
@@ -80,7 +82,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
 "Dash
-"nmap <silent> <leader>d <Plug>DashSearch
+nmap <silent> <leader>d <Plug>DashSearch
 
 "Bundle 配置
 "================================================== 
@@ -124,11 +126,11 @@ Plugin 'othree/html5.vim'
 Plugin 'altercation/vim-colors-solarized'
 
 "iterm下vim光标样式修复
-"Plugin 'sjl/vitality.vim'
+Plugin 'sjl/vitality.vim'
 "Dash文档
-"Plugin 'rizzatti/dash.vim'
+Plugin 'rizzatti/dash.vim'
 "Vim剪切板 shift ” + Y
-"Plugin 'vim-scripts/fakeclip'
+Plugin 'vim-scripts/fakeclip'
 
 "============================================
 
