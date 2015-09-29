@@ -1,6 +1,6 @@
 [user]
 	email = chxj1992@gmail.com
-	name = chxj1992
+	name = chenxiaojing
 [push]
 	default = simple
 
@@ -15,3 +15,5 @@
 	ui = true
 [merge]
 	tool = vimdiff
+[core]
+	excludesfile = ~/.gitignore
