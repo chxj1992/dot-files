@@ -18,13 +18,13 @@ ZSH_THEME="fino"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git svn npm tmux z colored-man zsh-syntax-highlighting svn-support)
+plugins=(git svn npm z colored-man zsh-syntax-highlighting svn-support)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-
 export PATH=$HOME/bin:/usr/sbin:/usr/local/bin:$PATH
+export PATH=/opt/pkg_uninstaller:$PATH
 
 export TERM=xterm-256color
 
@@ -33,15 +33,5 @@ export LANG=zh_CN.UTF-8
 source ~/.zsh_aliases
 source ~/.zsh_docker
 
-#composer
-export COMPOSER_HOME=/etc/composer/
-
-export JAVA_HOME=/usr/lib/jvm/jdk1.7.0_75
-export JRE_HOME=${JAVA_HOME}/jre  
-export CLASSPATH=.:${JAVA_HOME}/lib:${JRE_HOME}/lib  
-export PATH=${JAVA_HOME}/bin:$PATH  
-export PATH=$JAVA_HOME/jre:$PATH
-
-tmux
-
+export HOMEBREW_GITHUB_API_TOKEN=6ed945420e2995585767061946c2e076fb48bf1a
 
