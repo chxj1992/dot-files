@@ -28,7 +28,9 @@ export PATH=/opt/pkg_uninstaller:$PATH
 
 export TERM=xterm-256color
 
-export LANG=zh_CN.UTF-8
+#export LANG=zh_CN.UTF-8
+export LC_ALL=en_US.UTF-8  
+export LANG=en_US.UTF-8
 
 source ~/.zsh_aliases
 source ~/.zsh_docker
