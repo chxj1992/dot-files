@@ -36,3 +36,5 @@ source ~/.zsh_docker
 
 export HOMEBREW_GITHUB_API_TOKEN=6ed945420e2995585767061946c2e076fb48bf1a
 
+export SCALA_HOME=/usr/local/lib/scala
+export PATH=$SCALA_HOME/bin:$PATH
