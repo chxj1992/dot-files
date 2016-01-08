@@ -23,7 +23,7 @@ plugins=(git svn npm z colored-man zsh-syntax-highlighting svn-support)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH=$HOME/bin:$HOME/.composer/bin:/usr/sbin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.composer/vendor/bin:/usr/sbin:/usr/local/bin:$PATH
 export PATH=/opt/pkg_uninstaller:$PATH
 
 export TERM=xterm-256color
