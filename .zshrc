@@ -23,7 +23,7 @@ plugins=(git svn npm z colored-man zsh-syntax-highlighting svn-support)
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH=$HOME/bin:/usr/sbin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.composer/bin:/usr/sbin:/usr/local/bin:$PATH
 export PATH=/opt/pkg_uninstaller:$PATH
 
 export TERM=xterm-256color
@@ -38,3 +38,13 @@ export HOMEBREW_GITHUB_API_TOKEN=6ed945420e2995585767061946c2e076fb48bf1a
 
 export SCALA_HOME=/usr/local/lib/scala
 export PATH=$SCALA_HOME/bin:$PATH
+
+export GRADLE_HOME=/usr/local/lib/gradle
+export PATH=$PATH:$GRADLE_HOME/bin
+
+export REDIS_HOME=/usr/local/lib/redis
+export PATH=$PATH:$REDIS_HOME/src
+
+export GOPATH=$HOME/work/go
+export PATH=$PATH:$GOPATH/bin
+
