@@ -18,7 +18,10 @@ ZSH_THEME="fino"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git svn npm z colored-man zsh-syntax-highlighting svn-support)
+plugins=(npm colored-man-pages colorize zsh-syntax-highlighting svn docker bower python common-aliases \ 
+laravel5 redis-cli git man vagrant git-extras git-flow sbt scala gradle git-remote-branch github osx \
+xcode command-not-found composer go golang ssh-agent z sudo supervisor cp copydir copyfile history \
+dirhistory history-substring-search pip iwhois emoji)
 
 source $ZSH/oh-my-zsh.sh
 
