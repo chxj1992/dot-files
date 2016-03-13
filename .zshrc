@@ -19,14 +19,14 @@ ZSH_THEME="fino"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(npm colored-man-pages colorize zsh-syntax-highlighting svn docker bower python common-aliases \ 
-laravel5 redis-cli git man vagrant git-extras git-flow sbt scala gradle git-remote-branch github osx \
+laravel5 redis-cli man vagrant git-extra git-flow sbt scala gradle git-remote-branch github osx \
 xcode command-not-found composer go golang ssh-agent z sudo supervisor cp copydir copyfile history \
 dirhistory history-substring-search pip iwhois emoji)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
-export PATH=$HOME/bin:$HOME/.composer/vendor/bin:/usr/sbin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:$HOME/.gvm/bin:$HOME/.composer/vendor/bin:/usr/sbin:/usr/local/bin:$PATH
 export PATH=/opt/pkg_uninstaller:$PATH
 
 export TERM=xterm-256color
@@ -36,6 +36,8 @@ export LANG=en_US.UTF-8
 
 source ~/.zsh_aliases
 source ~/.zsh_docker
+
+eval "$(docker-machine env default)"
 
 export HOMEBREW_GITHUB_API_TOKEN=6ed945420e2995585767061946c2e076fb48bf1a
 
@@ -50,4 +52,3 @@ export PATH=$PATH:$REDIS_HOME/src
 
 export GOPATH=$HOME/work/go
 export PATH=$PATH:$GOPATH/bin
-
