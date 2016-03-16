@@ -132,8 +132,13 @@ Plugin 'rizzatti/dash.vim'
 "Vim剪切板 shift ” + Y
 Plugin 'vim-scripts/fakeclip'
 
+Plugin 'avakhov/vim-yaml'
+
 "============================================
 
 filetype plugin indent on     
 "语法高亮
 syntax on
+
+autocmd Filetype html,css,xml setlocal ts=2 sw=2 expandtab
+
