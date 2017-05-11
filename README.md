@@ -16,7 +16,8 @@ myConfig
         $ git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim
         $ vim
         :PluginInstall
-        $ cp ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/
+        $ mkdir -p ~/.vim/colors/
+        $ cp ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/
 
 # Tmux 
 
