@@ -35,20 +35,9 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 source ~/.zsh_aliases
-source ~/.zsh_docker
-
-eval "$(docker-machine env default)"
 
 export HOMEBREW_GITHUB_API_TOKEN=6ed945420e2995585767061946c2e076fb48bf1a
 
-export SCALA_HOME=/usr/local/lib/scala
-export PATH=$SCALA_HOME/bin:$PATH
-
-export GRADLE_HOME=/usr/local/lib/gradle
-export PATH=$PATH:$GRADLE_HOME/bin
-
-export REDIS_HOME=/usr/local/lib/redis
-export PATH=$PATH:$REDIS_HOME/src
-
+#golang
 export GOPATH=$HOME/work/go
-export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin

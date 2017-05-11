@@ -18,3 +18,10 @@ alias sudo='sudo '
 
 # Plugins
 alias fuck='eval $(thefuck $(fc -ln -1))'
+alias poli='http_proxy=http://localhost:8123'
+
+
+#docker
+alias docker-stop-all 'docker ps -a | awk '{print $1}' | xargs docker stop'
+alias docker-rm-all 'docker ps -a | awk '{print $1}' | xargs docker rm'
+
