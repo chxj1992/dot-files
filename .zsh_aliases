@@ -22,6 +22,8 @@ alias poli='http_proxy=http://localhost:8123'
 
 
 #docker
-alias docker-stop-all 'docker ps -a | awk '{print $1}' | xargs docker stop'
-alias docker-rm-all 'docker ps -a | awk '{print $1}' | xargs docker rm'
+alias docker-stop-all='docker ps | awk "{print $1}" | xargs docker stop'
+alias docker-rm-all='docker ps | awk "{print $1}" | xargs docker rm'
+
+alias bfg='java -jar /usr/local/lib/bfg-1.12.15/bfg.jar'
 

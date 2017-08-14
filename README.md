@@ -19,13 +19,12 @@ myConfig
         $ mkdir -p ~/.vim/colors/
         $ cp ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/        
 
-# Tmux 
+# Tmux
 
     $ sudo apt-get install tmux
     $ cp -f .tmux.conf ~/
     
-
-# Zsh (Recommended)
+# Zsh 
 
 + Install Zsh
     
@@ -39,11 +38,3 @@ myConfig
         $ source ~/.zshrc
 
 
-# Bash (NOT Recommended)
-
-    $ cp -f .bash* ~/
-
-
-# Idea
-
-File > Import Settings -- settings.jar

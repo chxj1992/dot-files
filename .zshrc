@@ -41,3 +41,15 @@ export HOMEBREW_GITHUB_API_TOKEN=6ed945420e2995585767061946c2e076fb48bf1a
 #golang
 export GOPATH=$HOME/work/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
+#flex
+export PATH=$PATH:/usr/local/lib/flex/bin
+
+#nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/chenxiaojing/.sdkman"
+[[ -s "/home/chenxiaojing/.sdkman/bin/sdkman-init.sh" ]] && source "/home/chenxiaojing/.sdkman/bin/sdkman-init.sh"
+
