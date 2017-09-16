@@ -36,20 +36,32 @@ export LANG=en_US.UTF-8
 
 source ~/.zsh_aliases
 
-export HOMEBREW_GITHUB_API_TOKEN=6ed945420e2995585767061946c2e076fb48bf1a
+export HOMEBREW_GITHUB_API_TOKEN=00ed73c67ad626bb2fc42c0d536ea89907328fb5
+
+#java
+export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home"
 
 #golang
 export GOPATH=$HOME/work/go
 export PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
-#flex
-export PATH=$PATH:/usr/local/lib/flex/bin
-
 #nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/chenxiaojing/.sdkman"
-[[ -s "/home/chenxiaojing/.sdkman/bin/sdkman-init.sh" ]] && source "/home/chenxiaojing/.sdkman/bin/sdkman-init.sh"
+#android
+export ANDROID_HOME=/Users/chenxiaojing/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools/bin:$ANDROID_HOME/platform-tools/
 
+#hadoop
+export HADOOP_HOME=/usr/local/lib/hadoop
+export HADOOP_CONF_DIR=$HADOOP_HOME/etc/hadoop
+export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
+
+#spark
+export SPARK_HOME=/usr/local/lib/spark
+export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/chenxiaojing/.sdkman"
+[[ -s "/Users/chenxiaojing/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/chenxiaojing/.sdkman/bin/sdkman-init.sh"

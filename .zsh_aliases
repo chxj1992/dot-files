@@ -18,7 +18,7 @@ alias sudo='sudo '
 
 # Plugins
 alias fuck='eval $(thefuck $(fc -ln -1))'
-alias poli='http_proxy=http://localhost:8123'
+alias poli='http_proxy=http://127.0.0.1:1087'
 
 
 #docker
@@ -27,3 +27,6 @@ alias docker-rm-all='docker ps | awk "{print $1}" | xargs docker rm'
 
 alias bfg='java -jar /usr/local/lib/bfg-1.12.15/bfg.jar'
 
+#hadoop
+alias hstart="start-dfs.sh;start-yarn.sh"
+alias hstop="stop-yarn.sh;stop-dfs.sh"
