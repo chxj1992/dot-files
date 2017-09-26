@@ -19,9 +19,9 @@ ZSH_THEME="fino"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(npm colored-man-pages colorize zsh-syntax-highlighting svn docker bower python common-aliases \ 
-laravel5 redis-cli man vagrant git-extra git-flow sbt scala gradle git-remote-branch github osx \
+laravel5 redis-cli man vagrant git git-extra git-flow sbt scala gradle git-remote-branch github osx \
 xcode command-not-found composer go golang ssh-agent z sudo supervisor cp copydir copyfile history \
-dirhistory history-substring-search pip iwhois emoji)
+dirhistory history-substring-search pip iwhois emoji zsh-autosuggestions)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -36,7 +36,7 @@ export LANG=en_US.UTF-8
 
 source ~/.zsh_aliases
 
-export HOMEBREW_GITHUB_API_TOKEN=00ed73c67ad626bb2fc42c0d536ea89907328fb5
+export HOMEBREW_GITHUB_API_TOKEN=3f503c211a08b53f29c51acf3d3698bed28b24c2
 
 #java
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home"
@@ -65,3 +65,4 @@ export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/Users/chenxiaojing/.sdkman"
 [[ -s "/Users/chenxiaojing/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/chenxiaojing/.sdkman/bin/sdkman-init.sh"
+
