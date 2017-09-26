@@ -35,8 +35,7 @@ export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
 
 source ~/.zsh_aliases
-
-export HOMEBREW_GITHUB_API_TOKEN=3f503c211a08b53f29c51acf3d3698bed28b24c2
+source ~/.zsh_token
 
 #java
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home"
