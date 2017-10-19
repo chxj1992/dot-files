@@ -1,5 +1,7 @@
-myConfig
+# terminal-config
 ========
+
+> My Terminal Config
 
 ![image](https://github.com/chenxiaojing123/myConfig/blob/master/terminal.png)
 
