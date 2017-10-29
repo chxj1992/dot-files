@@ -51,24 +51,28 @@ map <C-_> :sp<CR>
 map <C-\> :vs<CR>
 
 "命令映射
-cabbrev W w
-cabbrev Q q
-cabbrev WQ wq
+"cabbrev W w
+"cabbrev Q q
+"cabbrev WQ wq
 
 
 "插件配置
 "==================================================
 
 "NerdTree: 目录树
-"更适合代码的目录树样式
-let g:netrw_liststyle= 3 
-cabbrev E e
+nmap <F2> :NERDTreeTabsToggle<CR>
+let NERDTreeShowLineNumbers=1
+let NERDTreeShowBookmarks=1
+let NERDTreeIgnore=['\~$', '\.pyc$', '\.swp$']
+let NERDTreesWinSize=35
+let NERDTreeWinPos="left"
+let g:nerdtree_tabs_open_on_console_startup=1
 
 "Tagbar: a outline addon
 nmap <F8> :TagbarToggle<CR>
 let g:Tlist_Ctags_Cmd='/usr/local/bin/ctags'
-let g:tagbar_left = 1
-let g:tagbar_width = 30
+let g:tagbar_right = 1
+let g:tagbar_width = 35
 
 "Emmet: html补全
 let g:user_emmet_expandabbr_key = '<C-e>'
@@ -102,37 +106,56 @@ Plugin 'gmarik/Vundle.vim'
 "My Plugins here:
 Plugin 'ctags.vim'
 Plugin 'majutsushi/tagbar'
+
 "代码补全
 Plugin 'gmarik/snipmate.vim'
+
 "目录树
-Plugin 'The-NERD-tree'
+Plugin 'scrooloose/nerdtree'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'Xuyuanp/nerdtree-git-plugin'
+
 "牛逼的光标移动方式
 Plugin 'EasyMotion'
+
 "VIM % 符号匹配增强
 Plugin 'tmhedberg/matchit'
+
 "标签补全
 Plugin 'mattn/emmet-vim'
+
 "符号配对
 Plugin 'Townk/vim-autoclose'
+
 "Git工具
 Plugin 'tpope/vim-fugitive'
+
 "AirLine
 Plugin 'bling/vim-airline'
+
 "符号匹配操作,ds:删除，ysiw:插入，cs:修改 ,t=>tag
 Plugin 'tpope/vim-surround'
+
 "html5支持
 Plugin 'othree/html5.vim'
 
+"Solarized
 Plugin 'altercation/vim-colors-solarized'
 
 "iterm下vim光标样式修复
 Plugin 'sjl/vitality.vim'
+
 "Dash文档
 Plugin 'rizzatti/dash.vim'
+
 "Vim剪切板 shift ” + Y
 Plugin 'vim-scripts/fakeclip'
 
+"Yaml
 Plugin 'avakhov/vim-yaml'
+
+"python indent
+Plugin 'vim-scripts/indentpython.vim'
 
 "============================================
 
