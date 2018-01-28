@@ -4,7 +4,7 @@
 > My Terminal Config
 
 
-![image](https://github.com/chenxiaojing123/myConfig/blob/master/screenshot.png)
+![screenshot](screenshot.png)
 
 
 # Vim 
@@ -35,4 +35,8 @@
         $ cp -f .zsh*  ~/
         $ source ~/.zshrc
 
+
+# Iterm2 
+
+![iterm2](iterm2.png)
 
