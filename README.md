@@ -4,7 +4,7 @@
 > My Terminal Config
 
 
-![image](https://github.com/chenxiaojing123/myConfig/blob/master/terminal.png)
+![image](https://github.com/chenxiaojing123/myConfig/blob/master/screenshot.png)
 
 
 # Vim 
@@ -22,11 +22,6 @@
         $ mkdir -p ~/.vim/colors/
         $ cp ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/        
 
-# Tmux
-
-    $ sudo apt-get install tmux
-    $ cp -f .tmux.conf ~/
-    
 # Zsh 
 
 + Install Zsh
