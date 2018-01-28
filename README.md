@@ -38,5 +38,7 @@
 
 # Iterm2 
 
+    $ cp com.googlecode.iterm2.plist ~/Library/Application Support/iTerm
+
 ![iterm2](iterm2.png)
 
