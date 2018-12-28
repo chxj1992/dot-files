@@ -18,15 +18,38 @@ alias sudo='sudo '
 
 # Plugins
 alias fuck='eval $(thefuck $(fc -ln -1))'
-alias poli='http_proxy=http://127.0.0.1:1087'
-
+alias poli='http_proxy=http://127.0.0.1:1087 https_proxy=http://127.0.0.1:1087'
+alias bfg='java -jar /usr/local/lib/bfg-1.12.15/bfg.jar'
 
 #docker
 alias docker-stop-all='docker ps | awk "{print $1}" | xargs docker stop'
 alias docker-rm-all='docker ps | awk "{print $1}" | xargs docker rm'
 
-alias bfg='java -jar /usr/local/lib/bfg-1.12.15/bfg.jar'
-
 #hadoop
 alias hstart="start-dfs.sh;start-yarn.sh"
 alias hstop="stop-yarn.sh;stop-dfs.sh"
+
+#work
+alias gbx-proxy='ssh -D localhost:2000 admin@gbx-ops'
+alias ga="cd /Users/chenxiaojing/work/autologin && python otp.py Z22LHZUHVHFBCS6K"
+alias coco="cd /Users/chenxiaojing/work/autologin && ./run.sh"
+alias clear_repo='find ~/.m2  -name "*.lastUpdated" -exec grep -q "Could not transfer" {} \; -print -exec rm {} \;'
+alias ntp="sudo ntpdate -u time.apple.com"
+alias korea="ssh -i '~/.ssh/id_rsa_koren' ubuntu@ec2-52-79-233-122.ap-northeast-2.compute.amazonaws.com"
+alias druid_encrypt="java -cp /usr/local/lib/druid-1.0.29.jar com.alibaba.druid.filter.config.ConfigTools "
+
+# EOS
+alias runeos='docker run --rm --name eosio -d -p 8888:8888 -p 9877:9876 -v ~/eosio/work:/work -v ~/eosio/data:/mnt/dev/data -v ~/eosio/config:/mnt/dev/config eosio/eos  /bin/bash -c "nodeos -e -p eosio --plugin eosio::wallet_api_plugin --plugin eosio::wallet_plugin --plugin eosio::producer_plugin --plugin eosio::history_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:8888 --access-control-allow-origin=* --contracts-console"'
+alias cleos='docker exec eosio /opt/eosio/bin/cleos --wallet-url http://localhost:8888 -u https://api.eoseco.com/'
+
+
+# Tor Command Line Tools by @gravmatt (gravmatt.com)
+alias myip='curl -s https://api.ipify.org/'
+alias myiplookup='ip2cc $(curl -s https://api.ipify.org/)'
+alias mytorip='curl -s --socks5 0.0.0.0:9050 https://api.ipify.org/'
+alias mytoriplookup='ip2cc $(curl -s --socks5 0.0.0.0:9050 https://api.ipify.org/)'
+alias tor_on='sudo networksetup setsocksfirewallproxy "Wi-Fi" 0.0.0.0 9050 && tor'
+alias tor_off='sudo networksetup setsocksfirewallproxystate "Wi-Fi" off && killall tor'
+
+
+
