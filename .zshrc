@@ -12,9 +12,7 @@ source ~/.zsh_powerlevel9k_haccks
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-open z zsh-autosuggestions zsh-completions history zsh-syntax-highlighting colored-man-pages emoji textmate)
-
-fpath=(/usr/local/share/zsh-completions $fpath)
+plugins=(git git-open z docker zsh-autosuggestions zsh-completions history zsh-syntax-highlighting colored-man-pages emoji textmate)
 
 source $ZSH/oh-my-zsh.sh
 
