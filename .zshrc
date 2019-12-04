@@ -4,30 +4,24 @@
 ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-#ZSH_THEME="robbyrussell"
-#ZSH_THEME="cloud"
-ZSH_THEME="fino"
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+#ZSH_THEME="fino"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_MODE='nerdfont-complete'
+source ~/.zsh_powerlevel9k_haccks
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(npm colored-man-pages colorize zsh-syntax-highlighting svn docker bower python common-aliases \ 
-laravel5 redis-cli man vagrant git git-extra git-flow sbt scala gradle git-remote-branch github osx \
-xcode command-not-found composer go golang ssh-agent z sudo supervisor cp copydir copyfile history \
-dirhistory history-substring-search pip iwhois emoji zsh-autosuggestions)
+plugins=(git git-open z zsh-autosuggestions zsh-completions history zsh-syntax-highlighting colored-man-pages emoji textmate)
+
+fpath=(/usr/local/share/zsh-completions $fpath)
 
 source $ZSH/oh-my-zsh.sh
 
 # User configuration
 export PATH=$HOME/bin:$HOME/.gvm/bin:$HOME/.composer/vendor/bin:/usr/sbin:/usr/local/bin:$PATH
 export PATH=/opt/pkg_uninstaller:$PATH
+export PATH=/usr/local/lib/yubihsm2-sdk/bin:$PATH
 
 export TERM=xterm-256color
 
@@ -36,6 +30,10 @@ export LANG=en_US.UTF-8
 
 source ~/.zsh_env
 source ~/.zsh_aliases
+
+export HOMEBREW_BOTTLE_DOMAIN=https://mirrors.tuna.tsinghua.edu.cn/homebrew-bottles
+
+GIT_TERMINAL_PROMPT=1
 
 #java
 export JAVA_HOME="/Library/Java/JavaVirtualMachines/jdk1.8.0_144.jdk/Contents/Home" 
@@ -61,9 +59,10 @@ export PATH=$PATH:$HADOOP_HOME/bin:$HADOOP_HOME/sbin
 #spark
 export SPARK_HOME=/usr/local/lib/spark
 export PATH=$PATH:$SPARK_HOME/bin:$SPARK_HOME/sbin
+export SPARK_MASTER_WEBUI_PORT=9090
 
-#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/Users/chenxiaojing/.sdkman"
-[[ -s "/Users/chenxiaojing/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/chenxiaojing/.sdkman/bin/sdkman-init.sh"
-
+#erlang
 export PATH="/usr/local/opt/erlang@20/bin:$PATH"
+
+[ -s "/Users/chenxiaojing/.web3j/source.sh" ] && source "/Users/chenxiaojing/.web3j/source.sh"
+

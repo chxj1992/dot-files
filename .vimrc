@@ -157,6 +157,12 @@ Plugin 'avakhov/vim-yaml'
 "python indent
 Plugin 'vim-scripts/indentpython.vim'
 
+"table支持 TableModeToggle
+Plugin 'dhruvasagar/vim-table-mode'
+
+"Solidity
+Plugin 'tomlion/vim-solidity'
+
 "============================================
 
 filetype plugin indent on     

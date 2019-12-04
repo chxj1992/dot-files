@@ -1,10 +1,13 @@
 
 # For Short 
 
+# http://github.com/sharkdp/bat/
+alias cat='bat'
+
 # some more ls aliases
-alias ll='ls -alF'
-alias la='ls -A'
-alias l='ls -CF'
+alias ls='exa -F'
+alias ll='exa -alhF'
+alias la='exa -a'
 
 alias cls='clear'
 
@@ -15,11 +18,16 @@ alias CD='cd'
 
 alias vi='vim'
 alias sudo='sudo '
+alias cp="cp -i"
+alias rm="trash"
+
 
 # Plugins
 alias fuck='eval $(thefuck $(fc -ln -1))'
 alias poli='http_proxy=http://127.0.0.1:1087 https_proxy=http://127.0.0.1:1087'
 alias bfg='java -jar /usr/local/lib/bfg-1.12.15/bfg.jar'
+alias shadowssh='ssh -o "ProxyCommand=nc -x 127.0.0.1:1080 %h %p"'
+alias v2rayssh='ssh -o "ProxyCommand=nc -x 127.0.0.1:1081 %h %p"'
 
 #docker
 alias docker-stop-all='docker ps | awk "{print $1}" | xargs docker stop'
@@ -31,7 +39,7 @@ alias hstop="stop-yarn.sh;stop-dfs.sh"
 
 #work
 alias gbx-proxy='ssh -D localhost:2000 admin@gbx-ops'
-alias ga="cd /Users/chenxiaojing/work/autologin && python otp.py Z22LHZUHVHFBCS6K"
+alias ga="cd /Users/chenxiaojing/work/autologin && python otp.py ${LDAP_GA_SECRET}"
 alias coco="cd /Users/chenxiaojing/work/autologin && ./run.sh"
 alias clear_repo='find ~/.m2  -name "*.lastUpdated" -exec grep -q "Could not transfer" {} \; -print -exec rm {} \;'
 alias ntp="sudo ntpdate -u time.apple.com"
