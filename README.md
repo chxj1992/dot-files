@@ -25,6 +25,9 @@ cp ./Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete.otf ~/Library/Fonts
 
     # https://github.com/nvbn/thefuck
     $ brew install thefuck 
+
+    # https://github.com/dylanaraps/neofetch
+    $ brew install neofetch
 ```
 
 

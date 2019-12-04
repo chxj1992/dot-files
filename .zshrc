@@ -64,3 +64,5 @@ export PATH="/usr/local/opt/erlang@20/bin:$PATH"
 
 [ -s "/Users/chenxiaojing/.web3j/source.sh" ] && source "/Users/chenxiaojing/.web3j/source.sh"
 
+neofetch --config off --bold off --colors 4 1 8 8 8 7
+
