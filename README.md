@@ -9,7 +9,10 @@
 # Basic
 
 + Install [Nerd Fonts](https://github.com/ryanoasis/nerd-fonts)
+
+```bash
 cp ./Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete.otf ~/Library/Fonts/
+```
 
 + Effective Tools
 
