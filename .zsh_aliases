@@ -46,6 +46,10 @@ alias ntp="sudo ntpdate -u time.apple.com"
 alias korea="ssh -i '~/.ssh/id_rsa_koren' ubuntu@ec2-52-79-233-122.ap-northeast-2.compute.amazonaws.com"
 alias druid_encrypt="java -cp /usr/local/lib/druid-1.0.29.jar com.alibaba.druid.filter.config.ConfigTools "
 
+alias aws-master='ssh -i "chxj1992-aws.pem" admin@xxx'
+alias aws-data='ssh -i "chxj1992-aws.pem" admin@xxx'
+alias aws-listener='_login() { ssh -i "~/chxj1992-aws.pem" admin@"$1" ;}; _login'
+
 # EOS
 alias runeos='docker run --rm --name eosio -d -p 8888:8888 -p 9877:9876 -v ~/eosio/work:/work -v ~/eosio/data:/mnt/dev/data -v ~/eosio/config:/mnt/dev/config eosio/eos  /bin/bash -c "nodeos -e -p eosio --plugin eosio::wallet_api_plugin --plugin eosio::wallet_plugin --plugin eosio::producer_plugin --plugin eosio::history_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:8888 --access-control-allow-origin=* --contracts-console"'
 alias cleos='docker exec eosio /opt/eosio/bin/cleos --wallet-url http://localhost:8888 -u https://api.eoseco.com/'
