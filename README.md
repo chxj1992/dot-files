@@ -54,6 +54,11 @@ cp ./Droid\ Sans\ Mono\ for\ Powerline\ Nerd\ Font\ Complete.otf ~/Library/Fonts
     $ cp ~/.vim/bundle/vim-colors-solarized/colors/solarized.vim ~/.vim/colors/        
 ```
 
+# Git
+
+```bash
+    $ cp .gitconfig ~/
+```
 
 # Zsh 
 

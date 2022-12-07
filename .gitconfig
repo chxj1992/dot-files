@@ -1,3 +1,5 @@
+[http]
+    proxy = socks5://127.0.0.1:1080
 [user]
 	email = chxj1992@gmail.com
 	name = chenxiaojing
